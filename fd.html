@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Learning JavaScript</title>
+    </head>
+    <body>
+        <form id="register-form"> 
+            <input id="name" type="text" placeholder="Name" value=""/>
+            <input id="pw" type="password" placeholder="Password" value=""/>
+            <a href="file:///home/itlab/Desktop/a/al.html" title="login page"><input id="rgstr_btn" type="submit" value="getaccount" onClick="store()"/></a>
+        </form>
+
+<script>
+var name = document.getElementById('name');
+var pw = document.getElementById('pw');
+
+function store() {
+    localStorage.setItem('name', name.value);
+    localStorage.setItem('pw', pw.value);
+}
+</script>
+</body>
+</html>
